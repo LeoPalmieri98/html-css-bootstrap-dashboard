@@ -9,20 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
         integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
     <header>
         <div class="container-fluid bg-dark">
-            <div class="d-flex align-items-center p-3 text-light ">
-                <img class="col-1" src="./img/duck.png" alt="Logo-Duck">
-                <div class="col-5 ms-4">
+            <div class="d-flex align-items-center p-3 text-light">
+                <img class="col-1 logo" src="./img/duck.png" alt="Logo-Duck">
+                <div class="col ms-4">
                     <span>Catalogo Libri</span>
-                    <span class="ms-2">Anagrafica Utenti</span>
-                    <span class="ms-2">Storico Prestiti</span>
-                    <span class="ms-2">Help</span>
+                    <span class="ms-2 text-white-50">Anagrafica Utenti</span>
+                    <span class="ms-2 text-white-50">Storico Prestiti</span>
+                    <span class="ms-2 text-white-50">Help</span>
                 </div>
-                <div col-6>
+                <div>
                     <form class="d-flex form-inline justify-content-end my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
                         <button class="btn btn-outline-light my-2 my-sm-0 ms-2" type="submit">Cerca</button>
@@ -31,101 +35,123 @@
             </div>
         </div>
     </header>
+
     <main>
-        <div class="container d-flex py-4">
-            <h2 class="col-6">Catalogo Libri</h2>
-            <button class="col-6 justify-content-end btn btn-primary">Aggiungi Libro</button>
-        </div>
+        <div class="container">
+            <div class="d-flex py-4">
+                <h2 class="col">Catalogo Libri</h2>
+                <button class="justify-content-end btn btn-primary">Aggiungi Libro</button>
+            </div>
 
-        <div>
-            <table class="container table">
-                <thead>
-                    <tr>
-                        <th class="col-6" scope="col">Titolo</th>
-                        <th scope="col">Data prestito</th>
-                        <th scope="col">Stato</th>
-                        <th scope="col">Azioni</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">I pilastri della terra</th>
-                        <td>-</td>
-                        <td>Disponibile</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">I promessi sposi</th>
-                        <td>-</td>
-                        <td>Disponibile</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Il signore degli anelli</th>
-                        <td>18/10/2023</td>
-                        <td>In Prestito</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Harry Potter e la pietra filosofale</th>
-                        <td>-</td>
-                        <td>Disponibile</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Il codice Da Vinci</th>
-                        <td>-</td>
-                        <td>Non Disponibile</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Shining</th>
-                        <td>-</td>
-                        <td>Disponibile</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">La divina commedia</th>
-                        <td>21/09/2023</td>
-                        <td>In Prestito</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Il trono di spade</th>
-                        <td>-</td>
-                        <td>Disponibile</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Il mondo di Sofia</th>
-                        <td>-</td>
-                        <td>Non Disponibile</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</th>
-                        <td>25/07/2023</td>
-                        <td>In Prestito</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Il piccolo principe</th>
-                        <td>-</td>
-                        <td>Non Disponibile</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">La storia infinita</th>
-                        <td>-</td>
-                        <td>Non Disponibile</td>
-                        <td></td>
-                    </tr>
-
-
-                </tbody>
-            </table>
-        </div>
-
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Titolo</th>
+                            <th scope="col">Data prestito</th>
+                            <th scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">I pilastri della terra</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I promessi sposi</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Il signore degli anelli</th>
+                            <td>18/10/2023</td>
+                            <td class="badge rounded-pill text-bg-warning text-light">In Prestito</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Harry Potter e la pietra filosofale</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Il codice Da Vinci</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-danger">Non Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shining</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">La divina commedia</th>
+                            <td>21/09/2023</td>
+                            <td class="badge rounded-pill text-bg-warning text-light">In Prestito</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Il trono di spade</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Il mondo di Sofia</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-danger">Non Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</th>
+                            <td>25/07/2023</td>
+                            <td class="badge rounded-pill text-bg-warning text-light">In Prestito</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Il piccolo principe</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-danger">Non Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">La storia infinita</th>
+                            <td>-</td>
+                            <td class="badge rounded-pill text-bg-danger">Non Disponibile</td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card " style="width: 18rem;">
+                <div class="card-header">
+                    Todo
+                </div>
+                <div class="form-check card">
+                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                    <label class="form-check-label" for="checkDefault">
+                        Chiamare segreteria
+                    </label>
+                </div>
+                <div class="form-check card">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Mandare avvisi prestiti scaduti
+                    </label>
+                </div>
+                <div class="form-check card">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Ordinare nuovi libri
+                    </label>
+                </div>
+            </div>
     </main>
 
 
