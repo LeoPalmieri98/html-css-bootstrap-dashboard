@@ -20,7 +20,7 @@
         <div class="container-fluid bg-dark">
             <div class="d-flex align-items-center p-3 text-light">
                 <img class="col-1 logo" src="./img/duck.png" alt="Logo-Duck">
-                <div class="col ms-4">
+                <div class="col ms-4 ">
                     <span>Catalogo Libri</span>
                     <span class="ms-2 text-white-50">Anagrafica Utenti</span>
                     <span class="ms-2 text-white-50">Storico Prestiti</span>
@@ -38,120 +38,171 @@
 
     <main>
         <div class="container">
-            <div class="d-flex py-4">
-                <h2 class="col">Catalogo Libri</h2>
-                <button class="justify-content-end btn btn-primary">Aggiungi Libro</button>
-            </div>
+            <div class="row">
+                <div class="d-flex py-4">
+                    <h2 class="col">Catalogo Libri</h2>
+                    <button class="justify-content-end btn btn-primary">Aggiungi Libro</button>
+                </div>
 
-            <div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th class="col-6" scope="col">Titolo</th>
-                            <th scope="col">Data prestito</th>
-                            <th scope="col">Stato</th>
-                            <th scope="col">Azioni</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">I pilastri della terra</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I promessi sposi</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Il signore degli anelli</th>
-                            <td>18/10/2023</td>
-                            <td class="badge rounded-pill text-bg-warning text-light">In Prestito</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Harry Potter e la pietra filosofale</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Il codice Da Vinci</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-danger">Non Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Shining</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">La divina commedia</th>
-                            <td>21/09/2023</td>
-                            <td class="badge rounded-pill text-bg-warning text-light">In Prestito</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Il trono di spade</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-success">Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Il mondo di Sofia</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-danger">Non Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</th>
-                            <td>25/07/2023</td>
-                            <td class="badge rounded-pill text-bg-warning text-light">In Prestito</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Il piccolo principe</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-danger">Non Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">La storia infinita</th>
-                            <td>-</td>
-                            <td class="badge rounded-pill text-bg-danger">Non Disponibile</td>
-                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="row col">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Data prestito</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row fw-light">I pilastri della terra</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-success py-1 my-2">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            <tr>
+                                <td scope="row">I promessi sposi</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-success py-1 my-2">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il signore degli anelli</td>
+                                <td>18/10/2023</td>
+                                <td><span class="badge rounded-pill text-bg-warning text-light py-1 my-2">In
+                                        Prestito</span>
+                                </td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Harry Potter e la pietra filosofale</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-success py-1 my-2">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il codice Da Vinci</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-danger py-1 my-2">Non Disponibile</span>
+                                </td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Shining</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-success py-1 my-2">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">La divina commedia</td>
+                                <td>21/09/2023</td>
+                                <td><span class="badge rounded-pill text-bg-warning text-light py-1 my-2">In
+                                        Prestito</span>
+                                </td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il trono di spade</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-success py-1 my-2">Disponibile</span></td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il mondo di Sofia</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-danger py-1 my-2">Non Disponibile</span>
+                                </td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                                <td>25/07/2023</td>
+                                <td><span class="badge rounded-pill text-bg-warning text-light py-1 my-2">In
+                                        Prestito</span>
+                                </td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il piccolo principe</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-danger py-1 my-2">Non Disponibile</span>
+                                </td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">La storia infinita</td>
+                                <td>-</td>
+                                <td><span class="badge rounded-pill text-bg-danger py-1 my-2">Non Disponibile</span>
+                                </td>
+                                <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash m-2"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mb-4">
+                        <div class="card-header fs-3"><h3>Todo</h3></div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="todo1">
+                                <label class="form-check-label" for="todo1">Chiamare segreteria</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="todo2">
+                                <label class="form-check-label" for="todo2">Mandare avvisi prestiti scaduti</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="todo3">
+                                <label class="form-check-label" for="todo3">Ordinare nuovi libri</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header fs-3"><h3>F.A.Q.</h3></div>
+                        <div class="accordion accordion-flush" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq1-heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1" aria-expanded="false">
+                                        Come aggiungere un nuovo libro?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Premi il pulsante "Aggiungi Libro" e compila il modulo.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq2-heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2" aria-expanded="false">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Usa la voce "Anagrafica Utenti" nella barra di
+                                        navigazione.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq3-heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3" aria-expanded="false">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Sì, la dashboard è responsive grazie a Bootstrap.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card " style="width: 18rem;">
-                <div class="card-header">
-                    Todo
-                </div>
-                <div class="form-check card">
-                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                    <label class="form-check-label" for="checkDefault">
-                        Chiamare segreteria
-                    </label>
-                </div>
-                <div class="form-check card">
-                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                    <label class="form-check-label" for="checkChecked">
-                        Mandare avvisi prestiti scaduti
-                    </label>
-                </div>
-                <div class="form-check card">
-                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                    <label class="form-check-label" for="checkChecked">
-                        Ordinare nuovi libri
-                    </label>
-                </div>
-            </div>
+        </div>
     </main>
 
 
